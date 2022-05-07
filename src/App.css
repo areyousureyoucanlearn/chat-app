@@ -1,9 +1,9 @@
 body {
-  background: #f8f8f8;
+  background: #f2f2f2;
 }
 .App {
   background: #fff;
-  width: 40%;
+  max-width: 1000px;
   margin: 20px auto;
   height: 95vh;
   display: flex;
@@ -34,16 +34,71 @@ body {
 
 .messages-frame {
   height: 100%;
-  border-top: 2px solid #f8f8f8;
-  border-bottom: 2px solid #f8f8f8;
+  border-top: 2px solid #f2f2f2;
+  border-bottom: 2px solid #f2f2f2;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+
+.date {
+  align-self: center;
+  margin: 20px;
 }
 
 .selfMessage{ 
+  align-self: end;
+  position: relative;
+  width: 200px;
   background: #007AFF;
+  border-radius: 5px;
+  z-index: 1;
+  padding: 5px 10px;
+}
+
+.selfMessage::after{
+  content: '';
+  position: absolute;
+  top: 0;
+  right: -15px;
+  border: 20px solid transparent;
+  border-top: 20px solid #007AFF;
+  border-radius: 2px;
+  z-index: -1;
+}
+
+.otherUser {
+  display: flex;
+  flex-direction: row;
+}
+
+.iconUser {
+  margin-right: 15px;
 }
 
 .otherMessage {
-  background: #f8f8f8;
+  align-self: start;
+  position: relative;
+  width: 200px;
+  background: #f2f2f2;
+  border-radius: 5px;
+  z-index: 1;
+  padding: 5px 10px;
+}
+
+.otherMessage::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -15px;
+  border: 20px solid transparent;
+  border-top: 20px solid #f2f2f2;
+  border-radius: 2px;
+  z-index: -1;
+}
+
+.timeMessage {
+  text-align: end;
 }
 
 .footer {
