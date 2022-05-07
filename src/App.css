@@ -38,6 +38,14 @@ body {
   border-bottom: 2px solid #f8f8f8;
 }
 
+.selfMessage{ 
+  background: #007AFF;
+}
+
+.otherMessage {
+  background: #f8f8f8;
+}
+
 .footer {
   display: flex;
   justify-content: space-between;
