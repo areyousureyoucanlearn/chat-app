@@ -1,0 +1,67 @@
+body {
+  background: #f8f8f8;
+}
+.App {
+  background: #fff;
+  width: 40%;
+  margin: 20px auto;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h5 {
+  margin: 0;
+}
+
+.title span {
+  font-size: 12px;
+}
+
+
+.messages-frame {
+  height: 100%;
+  border-top: 2px solid #f8f8f8;
+  border-bottom: 2px solid #f8f8f8;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 10px;
+}
+
+button {
+  display: flex;
+  align-items: center;
+  border: none;
+  background: #fff;
+}
+
+.sendMessage {
+  width: 100%;
+}
+
+.sendMessage input {
+  border: none;
+  width: 100%;
+  line-height: 3em;
+  background: #fff;
+}
+
+.buttonFormR {
+  display: flex;
+}
