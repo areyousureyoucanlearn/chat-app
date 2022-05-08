@@ -11,27 +11,6 @@ body {
   justify-content: space-between;
 }
 
-.App-header {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-.title {
-  text-align: center;
-}
-
-.title h5 {
-  margin: 0;
-}
-
-.title span {
-  font-size: 12px;
-}
-
-
 .messages-frame {
   height: 100%;
   border-top: 2px solid #f2f2f2;
