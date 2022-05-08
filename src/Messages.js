@@ -8,8 +8,8 @@ function Messages({date}){
             <div className='date'>
                 <span>{date}</span>
             </div>
-            <SelfMessage message date/>
-            <OtherMessage user date/>
+            <SelfMessage message="Hi cuite!" date="19:07"/>
+            <OtherMessage user="Ivan" message="Hi poop!" date="19:08"/>
         </div>
     )
 }

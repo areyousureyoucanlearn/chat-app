@@ -1,14 +1,14 @@
 import './OtherMessage.css'
 
-function OtherMessage({user, date}) {
+function OtherMessage({user, message, date}) {
     return (
         <div className='otherUser'>
             <div className='iconUser'>
-                <img src={user.icon} alt={user.name} />
+                {user}
             </div>
             <div className='otherMessage'>
-                <div><span>{user.name}</span></div>
-                <span>{user.message}</span>
+                <div><span>{user}</span></div>
+                <span>{message}</span>
                 <div className='timeMessage'>
                     <span>{date}</span>
                 </div>

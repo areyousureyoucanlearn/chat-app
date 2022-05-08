@@ -1,5 +1,5 @@
 import './SelfMessage.css'
-function SelfMessage(message, date) {
+function SelfMessage({message, date}) {
     return (
         <div className='selfMessage'>
             <span>{message}</span>
