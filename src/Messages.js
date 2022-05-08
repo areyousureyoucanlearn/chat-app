@@ -2,14 +2,14 @@ import './Messages.css'
 import SelfMessage from './SelfMessage';
 import OtherMessage from './OtherMessage';
 
-function Messages(){
+function Messages({date}){
     return (
         <div className='messages-frame'>
             <div className='date'>
-            <span>2/2/2222</span>
+                <span>{date}</span>
             </div>
-            <SelfMessage/>
-            <OtherMessage/>
+            <SelfMessage message date/>
+            <OtherMessage user date/>
         </div>
     )
 }

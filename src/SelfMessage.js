@@ -1,10 +1,10 @@
 import './SelfMessage.css'
-function SelfMessage() {
+function SelfMessage(message, date) {
     return (
         <div className='selfMessage'>
-            <span>Hi cutie!</span>
+            <span>{message}</span>
             <div className='timeMessage'>
-                time
+                {date}
             </div>
         </div>
     )
