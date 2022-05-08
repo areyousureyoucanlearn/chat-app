@@ -1,7 +1,5 @@
 import './SendMessage.css'
-import { PaperAirplaneIcon } from '@heroicons/react/solid'
-import { AtSymbolIcon } from '@heroicons/react/solid'
-import { EmojiHappyIcon } from '@heroicons/react/solid'
+import { PaperAirplaneIcon, EmojiHappyIcon, AtSymbolIcon } from '@heroicons/react/solid'
 
 function SendMessage() {
     return (
