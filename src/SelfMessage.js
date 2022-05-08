@@ -4,7 +4,7 @@ function SelfMessage(message, date) {
         <div className='selfMessage'>
             <span>{message}</span>
             <div className='timeMessage'>
-                {date}
+                <span>{date}</span>
             </div>
         </div>
     )

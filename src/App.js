@@ -8,7 +8,7 @@ function App() {
   return (
     <div className="App">
       <Header title="🦄 Team Unicorns" description = "last seen 45 minutes ago"/>
-      <Messages date="22/22/2222"/>
+      <Messages date={new Date()} />
       <SendMessage/>
     </div>
   );

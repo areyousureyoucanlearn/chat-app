@@ -10,7 +10,7 @@ function OtherMessage({user, date}) {
                 <div><span>{user.name}</span></div>
                 <span>{user.message}</span>
                 <div className='timeMessage'>
-                    {date}
+                    <span>{date}</span>
                 </div>
             </div>
         </div>
