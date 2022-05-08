@@ -1,4 +1,5 @@
 import './Header.css';
+import { DotsHorizontalIcon } from '@heroicons/react/solid'
 
 function Header({title, description}) {
   return (
@@ -12,9 +13,7 @@ function Header({title, description}) {
           <h5>{title}</h5>
           <span>{description}</span>
         </div>
-        <button>
-          <img src="icon-bm.png" alt='icon'/>
-        </button>
+        <DotsHorizontalIcon  className="icon"/>
       </header>
   )
 }
