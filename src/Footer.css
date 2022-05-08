@@ -1,0 +1,20 @@
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10px;
+  }
+
+.sendMessage {
+    width: 100%;
+  }
+  
+.sendMessage input {
+    border: none;
+    width: 100%;
+    line-height: 3em;
+    background: #fff;
+  }
+  
+.buttonFormR {
+    display: flex;
+  }
