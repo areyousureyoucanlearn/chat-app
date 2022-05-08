@@ -1,16 +1,16 @@
 import './OtherMessage.css'
 
-function OtherMessage() {
+function OtherMessage({user, message, date}) {
     return (
         <div className='otherUser'>
             <div className='iconUser'>
-                icon
+                {user}
             </div>
             <div className='otherMessage'>
-                <div><span>Name</span></div>
-                <span>Hi poop!</span>
+                <div><span>{user}</span></div>
+                <span>{message}</span>
                 <div className='timeMessage'>
-                    time
+                    <span>{date}</span>
                 </div>
             </div>
         </div>

@@ -1,4 +1,4 @@
-import './Footer.css'
+import './SendMessage.css'
 
 function SendMessage() {
     return (

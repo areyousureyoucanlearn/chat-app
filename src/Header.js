@@ -1,14 +1,16 @@
 import './Header.css';
 
-function Header() {
+function Header({title, description}) {
   return (
       <header className="App-header">
         <div id='Avatar-group'>
-
+            <div>
+              <img src="" alt=''/>
+            </div>
         </div>
         <div className='title'>
-          <h5>🦄 Team Unicorns</h5>
-          <span>last seen 45 minutes ago</span>
+          <h5>{title}</h5>
+          <span>{description}</span>
         </div>
         <button>
           <img src="icon-bm.png" alt='icon'/>
