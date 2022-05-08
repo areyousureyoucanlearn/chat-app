@@ -10,7 +10,7 @@ function OtherMessage() {
                 <div><span>Name</span></div>
                 <span>Hi poop!</span>
                 <div className='timeMessage'>
-                time
+                    time
                 </div>
             </div>
         </div>
