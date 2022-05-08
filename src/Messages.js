@@ -1,4 +1,6 @@
 import './Messages.css'
+import SelfMessage from './SelfMessage';
+import OtherMessage from './OtherMessage';
 
 function Messages(){
     return (
@@ -6,24 +8,8 @@ function Messages(){
             <div className='date'>
             <span>2/2/2222</span>
             </div>
-            <div className='selfMessage'>
-            <span>Hi cutie!</span>
-            <div className='timeMessage'>
-                time
-            </div>
-            </div>
-            <div className='otherUser'>
-            <div className='iconUser'>
-                icon
-            </div>
-            <div className='otherMessage'>
-                <div><span>Name</span></div>
-                <span>Hi poop!</span>
-                <div className='timeMessage'>
-                time
-                </div>
-            </div>
-            </div>
+            <SelfMessage/>
+            <OtherMessage/>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import Header from './Header';
 import Messages from './Messages';
-import SendMessage from './footer';
+import SendMessage from './Footer';
 import './App.css';
 
 

@@ -12,28 +12,6 @@
     margin: 20px;
   }
   
-  .selfMessage{ 
-    align-self: end;
-    position: relative;
-    width: 200px;
-    background: #007AFF;
-    border-radius: 5px;
-    z-index: 1;
-    padding: 5px 10px;
-    color: #fff;
-  }
-  
-  .selfMessage::after{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: -15px;
-    border: 20px solid transparent;
-    border-top: 20px solid #007AFF;
-    border-radius: 2px;
-    z-index: -1;
-  }
-  
   .otherUser {
     display: flex;
     flex-direction: row;
