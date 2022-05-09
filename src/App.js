@@ -22,7 +22,7 @@ function App() {
   const messagesWithImages = messages.map((message) => {
     for (const user of users) {
       if (user.id === message.userId) {
-        messages.image = user.image
+        message.image = user.image
         break
       }
     }
