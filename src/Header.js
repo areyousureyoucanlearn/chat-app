@@ -1,13 +1,11 @@
 import './Header.css';
 import { DotsHorizontalIcon } from '@heroicons/react/solid'
 
-function Header({title, description}) {
+function Header({title, description, children}) {
   return (
       <header className="App-header">
-        <div id='Avatar-group'>
-            <div>
-              <img src="" alt=''/>
-            </div>
+        <div className='Avatar-group'>
+            {children}
         </div>
         <div className='title'>
           <h5>{title}</h5>

@@ -21,13 +21,24 @@ function App() {
 
   return (
     <div className="App">
-      <Header title="🦄 Team Unicorns" description="last seen 45 minutes ago" />
+      <Header title="🦄 Team Unicorns" description="last seen 45 minutes ago">
+      {
+          users.map((user) => {
+            return (
+              <div key={user.id} className='Avatar'>
+                <img src={user.image} alt={user.name}></img>
+              </div>
+            )
+          })
+        }
+        
+      </Header>
       <Messages date="08/05/2022">
         {messages.map((message) => {
           if (message.userId === userId) {
-            return <SelfMessage message={message.text} date={message.id} />
+            return <SelfMessage key={message.id} message={message.text} date={message.id} />
           } else {
-            return <OtherMessage user={message.name} message={message.text} date={message.id} />
+            return <OtherMessage key={message.id} user={message.name} message={message.text} date={message.id} />
           }
         })}
       </Messages>
