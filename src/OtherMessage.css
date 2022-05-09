@@ -5,6 +5,15 @@
   
   .iconUser {
     margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+  }
+
+  .iconUser img {
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
   }
   
   .otherMessage {
