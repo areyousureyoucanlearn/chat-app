@@ -1,11 +1,19 @@
 import './Header.css';
 import { DotsHorizontalIcon } from '@heroicons/react/solid'
 
-function Header({title="🦄 Team Unicorns", description="last seen 45 minutes ago", children}) {
+function Header({title, description, users}) {
   return (
       <header className="App-header">
         <div className='Avatar-group'>
-            {children}
+        {
+          users.map((user, index) => {
+            return (
+              <div id={user.id} key={user.id} className='Avatar' style={{left: index*30 + 'px'}}>
+                <img src={user.image} alt={user.name}></img>
+              </div>
+            )
+          })
+        }
         </div>
         <div className='title'>
           <h5>{title}</h5>

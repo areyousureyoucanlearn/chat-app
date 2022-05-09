@@ -21,17 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header>
-      {
-          users.map((user, index) => {
-            return (
-              <div id={user.id} key={user.id} className='Avatar' style={{left: index*30 + 'px'}}>
-                <img src={user.image} alt={user.name}></img>
-              </div>
-            )
-          })
-        }
-        
+      <Header title="🦄 Team Unicorns" description="last seen 45 minutes ago" users={users}>
       </Header>
       <Messages date="08/05/2022">
         {messages.map((message) => {
