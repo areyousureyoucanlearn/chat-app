@@ -8,6 +8,11 @@ import './App.css';
 function App() {
   const userId = 5;
 
+  const users = [
+    {id: 3, name: "Ivan", image: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/847.jpg"},
+    {id: 5, name: "Andriy", image: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1148.jpg"},
+  ];
+
   const messages = [
     {id:1, name: "Ivan", text:"Hello!", userId: 3},
     {id:2, name: "Ivan", text:"Are you here?", userId: 3},
