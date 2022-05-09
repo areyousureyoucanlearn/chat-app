@@ -25,7 +25,7 @@ function App() {
       {
           users.map((user) => {
             return (
-              <div className='Avatar' style={{left: user.offset + 'px'}}>
+              <div key={user.id} className='Avatar' style={{left: user.offset + 'px'}}>
                 <img src={user.image} alt={user.name}></img>
               </div>
             )
@@ -36,9 +36,9 @@ function App() {
       <Messages date="08/05/2022">
         {messages.map((message) => {
           if (message.userId === userId) {
-            return <SelfMessage message={message.text} date={message.id} />
+            return <SelfMessage key={message.id} message={message.text} date={message.id} />
           } else {
-            return <OtherMessage user={message.name} message={message.text} date={message.id} />
+            return <OtherMessage key={message.id} user={message.name} message={message.text} date={message.id} />
           }
         })}
       </Messages>
