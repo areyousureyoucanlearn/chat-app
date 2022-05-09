@@ -21,7 +21,7 @@ function App() {
 
   const messagesWithImages = messages.map((message) => {
     for (const user of users) {
-      if (user.id == message.userId) {
+      if (user.id === message.userId) {
         messages.image = user.image
         break
       }
@@ -35,7 +35,7 @@ function App() {
       <Header users={users} title="🦄 Team Unicorns" description="last seen 45 minutes ago">
       </Header>
       <Messages date="08/05/2022">
-        {messages.map((message) => {
+        {messagesWithImages.map((message) => {
           if (message.userId === userId) {
             return <SelfMessage key={message.id} message={message.text} date={message.id} />
           } else {
