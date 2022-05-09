@@ -9,8 +9,8 @@ function App() {
   const userId = 5;
 
   const users = [
-    {id: 3, name: "Ivan", image: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/847.jpg", offset: 0},
-    {id: 5, name: "Andriy", image: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1148.jpg", offset: 30},
+    {id: 3, name: "Ivan", image: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/847.jpg"},
+    {id: 5, name: "Andriy", image: "https://cloudflare-ipfs.com/ipfs/Qmd3W5DuhgHirLHGVixi6V76LhCkZUz6pnFt5AJBiyvHye/avatar/1148.jpg"},
   ];
 
   const messages = [
@@ -25,7 +25,7 @@ function App() {
       {
           users.map((user) => {
             return (
-              <div key={user.id} className='Avatar' style={{left: user.offset + 'px'}}>
+              <div key={user.id} className='Avatar'>
                 <img src={user.image} alt={user.name}></img>
               </div>
             )
