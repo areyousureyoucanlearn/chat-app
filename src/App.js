@@ -21,11 +21,11 @@ function App() {
 
   return (
     <div className="App">
-      <Header title="🦄 Team Unicorns" description="last seen 45 minutes ago">
+      <Header>
       {
-          users.map((user) => {
+          users.map((user, index) => {
             return (
-              <div id={user.id} key={user.id} className='Avatar'>
+              <div id={user.id} key={user.id} className='Avatar' style={{left: index*30 + 'px'}}>
                 <img src={user.image} alt={user.name}></img>
               </div>
             )
