@@ -6,9 +6,9 @@ function Header({title, description, users}) {
       <header className="App-header">
         <div className='Avatar-group'>
         {
-          users.map((user, index) => {
+          [...users].reverse().splice(0,users.length-(users.length-4)).map((user, index) => {
             return (
-              <div id={user.id} key={user.id} className='Avatar' style={{left: index*30 + 'px'}}>
+              <div id={user.id} key={user.id} className='Avatar' style={{left: index*30+'px'}}>
                 <img src={user.image} alt={user.name}></img>
               </div>
             )
