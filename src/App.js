@@ -25,7 +25,7 @@ function App() {
       {
           users.map((user) => {
             return (
-              <div key={user.id} className='Avatar'>
+              <div id={user.id} key={user.id} className='Avatar'>
                 <img src={user.image} alt={user.name}></img>
               </div>
             )
