@@ -21,7 +21,7 @@ function App() {
 
   return (
     <div className="App">
-      <Header title="🦄 Team Unicorns" description="last seen 45 minutes ago" users={users}>
+      <Header users={users} title="🦄 Team Unicorns" description="last seen 45 minutes ago">
       </Header>
       <Messages date="08/05/2022">
         {messages.map((message) => {
