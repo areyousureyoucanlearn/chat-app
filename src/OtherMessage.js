@@ -1,10 +1,10 @@
 import './OtherMessage.css'
 
-function OtherMessage({user, message, date}) {
+function OtherMessage({userIcon, user, message, date}) {
     return (
         <div className='otherUser'>
             <div className='iconUser'>
-                {user}
+                <img src={userIcon} alt={user}></img>
             </div>
             <div className='otherMessage'>
                 <div><span>{user}</span></div>
