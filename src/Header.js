@@ -3,8 +3,8 @@ import { DotsHorizontalIcon } from '@heroicons/react/solid'
 
 function Header({title, description, users}) {
 
-  const userGroup = [...users].reverse().splice(0,users.length-(users.length-4))
-  
+  const userGroup = [...users].reverse().splice(0,4)
+
   return (
       <header className="App-header">
         <div className='Avatar-group'>
